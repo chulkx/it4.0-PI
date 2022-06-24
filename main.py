@@ -9,6 +9,11 @@ import sys
 
 
 def carga():
+    '''
+    Función con la cual podemos cargar los numeros que necesitamos trabajar.
+    Debe ser un numero entero positivo.
+    Retorna una lista que contiene los numero ingresados.
+    '''
     try:
         cant = int(input('¿Cuantos numeros desea ingresar? '))
         print(f'Ingrese {cant} numeros por favor: ')
@@ -22,6 +27,10 @@ def carga():
         sys.exit(1)
 
 def seleccion():
+    '''
+    Imprime en pantalla las opciones a elegir.
+    Retorna un string con la opcion elegida (a,b,c,d,e o q)
+    '''
     print()
     print('Opciones: ')
     print('a -> Sumar todos los elemntos')
@@ -35,6 +44,10 @@ def seleccion():
 
 
 def suma(lista):
+    '''
+    Recibe una lista con numeros int o float.
+    Retorna el valor resultante de sumar los elementos de la lista.
+    '''
     res = 0
     for i in lista:
         res += i
@@ -42,21 +55,46 @@ def suma(lista):
 
 
 def promedio(lista):
+    '''
+    Recibe una lista con numeros int o float.
+    Retorna el promedio de los valores de la lista.
+    '''
     res = suma(lista)/len(lista)
     return res
 
 
 def maximo(lista):
+    '''
+    Recibe una lista con numeros int o float.
+    Retorna el mayor de los valores de la lista.
+    '''
     res = max(lista)
     return res
 
 
 def minimo(lista):
+    '''
+    Recibe una lista con numeros int o float.
+    Retorna el menor de los valores de la lista.
+    '''
     res = min(lista)
     return res
 
 
 def main():
+    '''
+    Funcion principal.
+    1-Llama a la funcion carga()
+    2-Llama a la funcion seleccion()
+    3-Segun lo que retorna la funcion seleccion llama a las fuciones:
+        a-suma(param)
+        b-promedio(param)
+        c-maximo(param)
+        d-minimo(param)
+        e-main()
+        q-sys.exit(1)
+    '''
+    
     print()
     print()
     print('='*50)
