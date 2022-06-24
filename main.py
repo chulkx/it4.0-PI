@@ -4,6 +4,8 @@
 Created on Tue Jun 21 20:42:44 2022
 
 @author: chulke
+
+@email: gustavogodoy85@gmail.com
 """
 import sys
 
