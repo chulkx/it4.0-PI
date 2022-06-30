@@ -12,11 +12,7 @@ import sys
 
 
 def carga():
-    '''
-    Función con la cual podemos cargar los numeros que necesitamos trabajar.
-    Debe ser un numero entero positivo.
-    Retorna una lista que contiene los numero ingresados.
-    '''
+
     try:
         cant = int(input('¿Cuantos numeros desea ingresar? '))
         print(f'Ingrese {cant} numeros por favor: ')
